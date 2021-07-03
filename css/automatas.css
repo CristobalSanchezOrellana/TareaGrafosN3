@@ -1,0 +1,130 @@
+#confirmar {
+    margin-left: 44% !important;
+}
+
+#auto1 {
+    margin-left: 40% !important;
+}
+
+#auto2 {
+    margin-left: 40% !important;
+}
+
+
+/*#boxs .col-6 {
+border-radius: 20px !important;
+}
+*/
+
+#Quintupla .col-md-6::before {
+    border-radius: 20px !important;
+}
+
+ :root {
+    --dark: black;
+    --warning: #f0cb526c;
+}
+
+#Quintupla .col-md-6 {
+    background-color: var(--warning);
+    padding-left: 4%;
+    /*border-color: transparent !important;*/
+    max-width: 500px!important;
+    border-right: 15px solid white !important;
+}
+
+#styless {
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+    /*border-right: 5px solid white !important;*/
+}
+
+@media (max-width: 900px) {
+    #Quintupla .col-md-6 {
+        max-width: 300px!important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    #Quintupla .col-md-6 {
+        max-width: 400px!important;
+    }
+    #styless {
+        margin-left: 10% !important;
+        margin-right: 5% !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #Quintupla .col-md-6 {
+        max-width: 300px!important;
+    }
+}
+
+
+/*@media (max-width: 405px) {
+#Quintupla .col-md-6 {
+max-width: 300px!important;
+}
+#styless {
+margin-left: 10% !important;
+margin-right: 5% !important;
+}
+}*/
+
+.marginbtn {
+    margin-left: 35%;
+}
+
+.marginbtn1 {
+    margin-left: 40%;
+}
+
+.marginbtn2 {
+    margin-left: 35%;
+}
+
+.border-darks {
+    border-color: transparent !important;
+    min-height: 250px !important;
+    max-width: 500px;
+    margin-right: 1% !important;
+}
+
+.border-darks:hover {
+    min-height: 250px !important;
+    max-width: 500px;
+}
+
+.dividerGr {
+    border-bottom: 2px solid black;
+    margin: 0;
+    margin-left: 7% !important;
+    margin-right: 7% !important;
+    
+}
+
+#rowUnion {
+    background-color: var(--warning) !important;
+    margin: 0px 15px 0px 0px !important;
+    padding: 15px 0px 15px 0px;
+}
+
+#rowUnion2 {
+    background-color: var(--warning) !important;
+    margin: 0px 0px 0px 15px !important;
+    padding: 15px 0px 15px 0px;
+}
+
+.border-danger {
+    border-color: transparent !important;
+}
+
+#bordes .col-md-6 {
+    /*border-right: white !important;*/
+    border-right: 5px solid white !important;
+}
+
+.bg-warning{
+    background-color: var(--warning) !important;
+}

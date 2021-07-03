@@ -1,10 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-  <head>
-  </head>
-  
-  <body>
-  </body>
-  
+<head>
+    <meta charset="UTFd-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Conexion Css -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/automatas.css">
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <title>Grafos y Lenguajes Formales</title>
+    
+</head>
+
+<body>
+    <div class="container">
+        
+            <h1 class="text-center">Ingresa el Automata AFD</h1>
+            <div class="text-center">
+                <p><strong>Importante:</strong> Cada vez que se llenen las tablas, el espacio tambien es un caracter. Por Favor borrarlo.</p>
+            </div>
+
+            <div class="row pt-3 justify-content-center">
+                <div class="col-md-6 mx-5">
+                    <p><strong>1.</strong> Indica el Numero de estados del automata</p>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="form-group">
+                                    <input class="form-control" type="number" id="Automata1" placeholder="Numero de estados para el automata" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><strong>2.</strong> Indique el alfabeto de entrada y elegir cuantas variables tendra.</p>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="form-group">
+                                    <input class="form-control" type="number" id="nEntradas" placeholder="Numero de variables del lenguaje para el automata" required>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <a onclick="addFormulario()" id="addFormulario()" class="btn btn-outline-light px-2 mb-3" style="text-align: center; max-width: 850px;">Aceptar e Ingresar </a>
+                    </div>
+                    <h1 class="" style="width: 300px;" width="300px"></h1>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center mx-5">
+                        <div id="mostrarmsj"></div>
+                        <div class="mx-4" id="formulario"></div>
+                        <div class="mx-4" id="formulario2"></div>
+                        <div class="mx-4" id="mostrarLenguaje"></div>
+                        <div class="mx-4" id="mostrarLenguaje2"></div>
+                    </div>
+                    <div class="mt-2 align-content-center" id="confirmar"></div>  
+                </div>
+                <div id="boxs" class="row mx-2">
+                    <div class="col-12 pb-5">
+                        <h2 class="text-center mt-1">Tabla de Transicion Automata AFD Asociada</h2>
+                        <div class="pt-4" id="tablaTransicion1" ></div>
+                    </div>
+                    <a onclick="confirmarTRA()" class="btn btn-outline-light px-2 mb-3 mt-2" id="auto2" style="text-align: center; max-width: 850px;"> Confirmar Datos</a>
+                </div>
+            </div>
+            <div id="Quintupla" class="row justify-content-center mx-2">
+                <div class="col-10 pb-5">
+                    <h2 class="text-center mt-1">Quintupla Automata AFD Asociada</h2>
+                    <div class="text-center bg-warning">
+                        <div id="primeraQuintupla1"></div>
+                        <div id="primeraQuintupla2"></div>
+                        <div id="primeraQuintupla3"></div>
+                        <div id="primeraQuintupla4"></div>
+                        <div id="primeraQuintupla5"></div>  
+                    </div>
+                </div>
+            </div>
+            <div id="lenguajeER" class="row justify-content-center mx-2">
+                <div class="col-10 pb-5">
+                    <h2 class="text-center mt-5">Lenguaje ER asociado al Automata AFD</h2>
+                    <div class="text-center bg-warning">
+                        <div id="LenguajeAsociado1"></div>
+                        <div id="LenguajeAsociado2"></div> 
+                    </div>
+                    <div id="lenguajeER"></div>
+                    <a onclick="imprimirEr()" class="btn btn-outline-light px-2 mb-3 mt-2" id="auto2" style="text-align: center; max-width: 850px;"> Obtener ER del Automata</a>
+                     
+                </div>
+
+            </div>
+
+    </div>
+</body>
 </html>
+<script src="js/aplicacion.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/c8152ea011.js" crossorigin="anonymous"></script>
